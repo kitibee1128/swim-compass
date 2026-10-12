@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swim Compass 2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>🏊 Swim Compass 2.0</h1>
+  <p>今日の練習を記録しましょう。</p>
+  <p id="todayDate"></p>
+<section id="dashboard">
+  <h2>📊 練習ダッシュボード</h2>
+
+  <p>🏊 総練習回数：<span id="totalPracticeCount">0</span>回</p>
+
+  <p>⏱️ 総練習時間：<span id="totalPracticeMinutes">0</span>分</p>
+
+  <p>📅 今月の練習：<span id="monthlyPracticeCount">0</span>回</p>
+  <p>🔥 連続練習日数：<span id="streakCount">0</span>日</p>
+</section>
+
+  <h2>🎯 今日の目標</h2>
+  <input type="text" placeholder="例：力まずに泳ぐ">
+
+  <h2>🏊 今日の練習</h2>
+　<button type="button" id="voiceInputButton">🎤 音声で記録</button>
+  <textarea id="practiceMemo" rows="5" placeholder="例：けのび、ドルフィンキック、片手バタフライ"></textarea>
+  <h2>⏱️ 練習時間</h2>
+<div class="minutesRow">
+  <input type="number" id="practiceMinutes" min="0" placeholder="例：60">
+  <span>分</span>
+</div>
+  <h2>😊 今日の感想</h2>
+<select id="mood">
+   <option>選んでください</option>
+    <option>良かった</option>
+    <option>普通</option>
+    <option>疲れた</option>
+</select>
+
+  <h2>📝 一言メモ</h2>
+  <textarea id="memo" rows="3" placeholder="今日気づいたこと"></textarea>
+  <p>
+    <button type="button" id="saveButton">保存</button>
+    <button type="button" id="resetButton">リセット</button>
+  </p>
+  <p id="saveMessage"></p>
+  <section id="historySection">
+  <h2>📚 過去の記録</h2>
+  <div id="historyList">
+    <p>まだ記録はありません。</p>
+  </div>
+</section>
+  <script src="script.js"></script>
+</body>
+</html>

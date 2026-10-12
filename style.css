@@ -1,0 +1,124 @@
+body {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: sans-serif;
+  background-color: #f4f9fc;
+  color: #222;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #0077b6;
+color: white;
+border: none;
+border-radius: 8px;
+}
+#resetButton {
+
+  margin-top: 10px;
+
+  background-color: #c94b4b;
+
+}
+button:hover {
+
+  opacity: 0.85;
+
+}
+button:active {
+
+  transform: translateY(2px);
+
+}
+#todayDate {
+  font-weight: bold;
+  color: #0077b6;
+  background-color: #eaf6fb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.minutesRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minutesRow input {
+  flex: 1;
+}
+
+.minutesRow span {
+  font-weight: bold;
+}
+
+
+#historySection {
+
+  margin-top: 30px;
+
+}
+
+#historyList {
+
+  display: grid;
+
+  gap: 12px;
+
+}
+
+.history-card {
+
+  background-color: #ffffff;
+
+  border: 1px solid #d9e2e8;
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+}
+
+.history-card h3 {
+
+  margin-top: 0;
+
+  color: #0077b6;
+
+}
+
+.history-card p {
+
+  margin: 6px 0;
+
+}
+.memo-text {
+  white-space: pre-wrap;
+}
+.edit-record-button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+}
